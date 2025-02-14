@@ -22,6 +22,21 @@ To add `air` to a project with `go tool`:
     go get -tool github.com/air-verse/air@latest
     ```
 
+1. `go.mod` now begins:
+
+    ```sh
+    module github.com/krismolendyke/go-1.24
+
+    go 1.24.0
+
+    tool github.com/air-verse/air
+
+    require (
+    	dario.cat/mergo v1.0.1 // indirect
+    	github.com/air-verse/air v1.61.7 // indirect
+    ...
+    ```
+
 1. Test it out:
 
     ```sh
